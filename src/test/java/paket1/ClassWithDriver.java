@@ -3,6 +3,7 @@ package paket1;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.*;
 
@@ -19,6 +20,7 @@ public class ClassWithDriver {
                 driver = new FirefoxDriver();
                 break;
             default:
+                ChromeOptions options = new ChromeOptions();
                 WebDriverManager.chromedriver().setup();
                 driver = new ChromeDriver();
         }
@@ -39,5 +41,7 @@ public class ClassWithDriver {
         System.out.println("Test 2");
     }
 
+    //button[ ./*[text()='Add to Cart'] or contains(@onclick,'wish')]
 
+    //button[ contains(@onclick,'cart.add') or contains(@onclick,'wish')]
 }

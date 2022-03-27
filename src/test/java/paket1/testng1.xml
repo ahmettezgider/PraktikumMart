@@ -9,13 +9,6 @@
         </classes>
     </test>
 
-    <test verbose="2" name="Test2">
-        <parameter name="browser" value="firefox"/>
-        <classes>
-            <class name="paket1.ClassWithDriver"/>
-        </classes>
-    </test>
-
 </suite>
 
 <!--
@@ -24,4 +17,6 @@
     driver, wait
 
     cep tel üzerinden chrome ile test
+    Gelistirci secenekleri android
+    cihaz seri no : 8-10 tiklayinca acilir,
 -->
